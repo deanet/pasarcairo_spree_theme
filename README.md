@@ -25,7 +25,7 @@ INSTALLATION
 
 Add the following line to your Gemfile:
 
-    gem 'spree_rdr_theme', :git => 'git://github.com/spree/spree_rdr_theme.git'
+    gem 'pasarcairo_spree_theme', :git => 'git://github.com/deanet/pasarcairo_spree_theme.git'
 
 NOTE: It's important that you add this line at the bottom of the Gemfile, or at least AFTER any other extension/engine/gem that you'd like to theme (i.e. Spree)
 
