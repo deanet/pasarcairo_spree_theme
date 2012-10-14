@@ -1,4 +1,4 @@
-module SpreeRdrTheme
+module PasarcairoSpreeTheme
   class Engine < Rails::Engine
     railtie_name "pasarcairo_spree_theme"
 

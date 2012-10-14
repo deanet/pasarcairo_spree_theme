@@ -1,4 +1,4 @@
-module SpreeRdrTheme
+module PasarcairoSpreeTheme
   module Generators
     class InstallGenerator < Rails::Generators::Base
 
