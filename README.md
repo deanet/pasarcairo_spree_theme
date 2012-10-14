@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 SUMMARY
 -------
 
@@ -40,3 +41,7 @@ Optional: Clear out precompiled assets (required for install in sandbox):
 
     $ rake assets:clean
 
+=======
+pasarcairo_spree_theme
+======================
+>>>>>>> 773fc400502d2e2ae81ca2a0bf3402f337014a1a
