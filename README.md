@@ -35,7 +35,7 @@ Run bunlder:
 
 Install assets:
 
-    $ rails g spree_rdr_theme:install
+    $ rails g pasarcairo_spree_theme:install
 
 Optional: Clear out precompiled assets (required for install in sandbox):
 
