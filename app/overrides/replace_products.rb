@@ -15,7 +15,7 @@ Deface::Override.new(:virtual_path => %q{spree/shared/_products},
         <%= link_to product_image(product), product %>
       </p>
       <div class="details">
-        <p class="stock"><%= product.has_stock? ? "IN STOCK" : "OUT OF STOCK" %></p>
+        <p class="stock"><%= product.has_stock? ? "STOK ADA" : "STOK HABIS" %></p>
         <p class="prices">
           <span class="price discounted"><%= number_to_currency(product.price * 1.2) %></span>&nbsp;
           <span class="price selling"><%= number_to_currency(product.price) %></span></p>

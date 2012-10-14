@@ -9,25 +9,26 @@ Deface::Override.new(:virtual_path => %q{spree/layouts/spree_application},
           <form action="#" >
           </form>
           <%= form_tag products_url, :method => :get do %>
-            <input type="search" id="s1" class="empty" name="keywords" placeholder="Search Railsdog Radio">
+            <input type="search" id="s1" class="empty" name="keywords" placeholder="Cari Pasar Cairo">
           <% end %>
           <nav>
-            <%= link_to "products", products_path %>
+            <%= link_to "Produk", products_path %>
             <% if current_user %>
               <%= link_to t('my_account'), account_path, :class => "cart" %>
               <%= link_to t('logout'), destroy_user_session_path, :class => "cart" %>
             <% else %>
               <%= link_to t('log_in'), login_path, :class => "cart" %>
             <% end %>
-            <%= link_to_cart %>
+            <%= link_to_cart "Keranjang" %>
           </nav>
         </header>
-        
+<!--    
         <% if content_for?(:banner) %>
           <div id="banner" role="banner">
             <%= yield :banner %>
           </div>
         <% end %>
+-->
         
         <div id="main" role="main">
           <% if flash.notice %>
@@ -41,6 +42,7 @@ Deface::Override.new(:virtual_path => %q{spree/layouts/spree_application},
         </div>
         
         <% if content_for?(:sidebar) %>
+	  <br/>
           <div id="sidebar" role="sidebar">
             <%= yield :sidebar %>
           </div>
@@ -54,41 +56,39 @@ Deface::Override.new(:virtual_path => %q{spree/layouts/spree_application},
     
         <div id="about-railsdog-radio">
           <div>
-            <p>
-              <strong>Railsdog Radio</strong> is NOT a real satellite radio store, it's a fully working demo application
-              for <a href="http://www.spreecommerce.com">Spree Commerce</a>. Please feel free to play around, but don't submit any information you would not consider public!</p>
+           Didatangkan langsung dari <b>Cairo, Mesir</b>. <b>Pasar Cairo</b> menyediakan produk kayu <b>Kauka / Kokka</b> yang didalamnya terdapat berbagai rahasia dan kelebihan sebagai obat, penyembuh dan pelindung. <b>Kayu Kokka</b> telah digunakan sejak zaman Nabi-nabi yang terdahulu seperti bahtera <b>Nabi Nuh AS</b>, tongkat <b>Nabi Musa AS</b>, tongkat <b>Nabi Syuaib AS</b>, tongkat <b>Sayyidina Ali KW<b>.
+ <p>
             <p id="more-about-railsdog-radio">
-              <a href="/about">More about Railsdog Radio ></a>
+              <a href="/about">Tentang Pasar Cairo ></a>
             </p>
           </div>
         </div>
     
         <div id="contact-us">
-          <h3>Contact Us</h3>
+          <h3>Hubungi</h3>
           <p>
-          (301)560-2000<br>
-          <a href="mailto:sales@railsdogradio.com">sales@railsdogradio.com</a>
+          (0274)560-2000<br>
+          <a href="mailto:sales@pasarcairo.com">sales@pasarcairo.com</a>
           </p>
         </div>
     
         <div id="social">
-          <h3>Social</h3>
+          <h3>Sosial</h3>
           <p>
-          <a href="http://facebook.com/spreecommerce" id="facebook"><span>Facebook</span></a>
-          <a href="http://feeds2.feedburner.com/spreehq" id="rss"><span>RSS</span></a>
-          <a href="http://twitter.com/spreecommerce" id="twitter"><span>Twitter</span></a>
+          <a href="http://facebook.com/pasarcairo" id="facebook"><span>Facebook</span></a>
+          <a href="http://twitter.com/pasarcairo" id="twitter"><span>Twitter</span></a>
           </p>
         </div>
     
         <div id="menu">
           <h3>Menu</h3>
           <p>
-          <a href="/about">About us</a><br />
-          <a href="/privacy">Privacy policy</a>
+          <a href="/about">Profil</a><br />
+          <a href="/privacy">Harga</a>
           </p>
         </div>
     
-        <p id="copyright">&copy; Copyright <%= Time.zone.now.year %> Railsdog Radio. All rights reserved</p>
+        <p id="copyright">&copy; Copyright <%= Time.zone.now.year %> Pasar Cairo. All rights reserved</p>
     
       </div>
     </footer>

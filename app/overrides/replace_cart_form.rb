@@ -8,13 +8,13 @@ Deface::Override.new(:virtual_path => %q{spree/products/show},
         <%= hidden_field_tag (@product.has_variants? ? :quantity : "variants[#{@product.master.id}]"), 1, :class => "title", :size => 3 %>
     
         <dl class="part-numbers clearfix">
-          <dt>PART NUMBER</dt>
+          <dt>Nomor Produk</dt>
           <dd><%= @product.sku %></dd>
         </dl>
         <dl class="prices clearfix">
-          <dt>Price</dt>
+          <dt>Harga</dt>
           <dd><span class="price discounted"><%= number_to_currency @product.cost_price %></span></dd>
-          <dt>Sale Price</dt>
+          <dt>Harga Diskon</dt>
           <dd><span class="price selling"><%= number_to_currency @product.price %></span></dd>
           <!-- #Coming soon
             <dt>after $xx.00 rebate</dt>
@@ -22,19 +22,19 @@ Deface::Override.new(:virtual_path => %q{spree/products/show},
           -->
         </dl>
         <dl class="shipping">
-          <dt>Shipping</dt>
-          <dd><span class="price">FREE</span></dd>
+          <dt>Ongkir</dt>
+          <dd><span class="price">GRATIS</span></dd>
         </dl>
         <dl class="stock">
-          <dt>In Stock</dt>
-          <dd><span class="stock"><%= @product.has_stock? ? "YES" : "NO" %></span></dd>
+          <dt>Stok</dt>
+          <dd><span class="stock"><%= @product.has_stock? ? "YA" : "TIDAK" %></span></dd>
         </dl>
         <hr />
     
     
       <hr />
     
-      <p><button type="submit">Add to cart</button></p>
+      <p><button type="submit">Tambahkan ke Keranjang</button></p>
     <% end %>
 
 </div>},

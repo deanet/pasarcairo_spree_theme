@@ -4,7 +4,7 @@ Deface::Override.new(:virtual_path => %q{spree/orders/show},
                           :text => %q{<% @body_id = 'cart' %>
 
 <div id="content" role="content">
-  <h1>Order details</h1>
+  <h1>Info Pembelian</h1>
 
   <table id="cart-detail">
     <thead>
@@ -50,7 +50,7 @@ Deface::Override.new(:virtual_path => %q{spree/orders/show},
         </tr>
       <% end %>
       <tr class="totals">
-        <td colspan="6">Item Subtotal</td>
+        <td colspan="6">Subtotal item</td>
         <td class="totals">
           <%= number_to_currency @order.item_total %>
         </td>

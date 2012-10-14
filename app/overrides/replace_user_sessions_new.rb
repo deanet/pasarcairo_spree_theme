@@ -8,16 +8,16 @@ Deface::Override.new(:virtual_path => %q{spree/user_sessions/new},
 <div id="local_login">
 
   <div id="existing-customer">
-    <h2>Existing Customers</h2>
-    <p>If you've already registered for an account you can sign in here:</p>
+    <h2>Pelanggan PasarCairo</h2>
+    <p>Jika anda sudah terdaftar di PasarCairo anda dapat login di sini:</p>
     <%= render :partial => 'spree/shared/login' %>
   </div>
 
   <hr/>
 
   <div id="new_customers">
-    <h2>New Customers</h2>
-    <p>You can register for a new account here on RailsDog Radio below:</p>
+    <h2>Pelanggan Baru</h2>
+    <p>Anda dapat mendaftarkan akun baru di PasarCairo dengan mengisi form berikut:</p>
     <%= form_for :user, :url => spree.user_registration_path(@user) do |f| %>
 
         <% if session[:omniauth] %>
@@ -29,7 +29,7 @@ Deface::Override.new(:virtual_path => %q{spree/user_sessions/new},
           <%= render 'spree/shared/user_form', :f => f %>
         <% end %>
         <p>
-          <button type="submit">Register</button>
+          <button type="submit">Daftar</button>
         </p>
       <% end %>
 

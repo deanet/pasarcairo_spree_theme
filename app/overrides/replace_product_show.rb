@@ -4,11 +4,12 @@ Deface::Override.new(:virtual_path => %q{spree/products/show},
                           :closing_selector => %q{},
                           :text => %q{<div data-hook="product_show">
   <% @body_id = 'product-details' %>
-
+<!--
     <%= content_for :banner do %>
-      <h1>Products</h1>
+      <h1>Produk</h1>
       <%= image_tag "store/satellite-radios-bg.jpg", :alt => "Satellite Radios" %>
     <% end %>
+-->
 
     <h2><%= @product.name %></h2>
     <div id="product-images" data-hook>
@@ -27,23 +28,23 @@ Deface::Override.new(:virtual_path => %q{spree/products/show},
             <%= hidden_field_tag (@product.has_variants? ? :quantity : "variants[#{@product.master.id}]"), 1, :class => "title", :size => 3 %>
 
             <dl class="part-numbers clearfix">
-              <dt>PART NUMBER</dt>
+              <dt>Nomer Produk</dt>
               <dd><%= @product.sku %></dd>
             </dl>
 
             <dl class="prices clearfix">
-              <dt>Price</dt>
+              <dt>Harga</dt>
               <dd><span class="price discounted"><%= number_to_currency (@product.price * 1.2) %></span></dd>
-              <dt>Sale Price</dt>
+              <dt>Harga Diskon</dt>
               <dd><span class="price selling"><%= number_to_currency (@product.price) %></span></dd>
             </dl>
             <dl class="shipping">
-              <dt>Shipping</dt>
-              <dd><span class="price">FREE</span></dd>
+              <dt>Ongkir</dt>
+              <dd><span class="price">GRATIS</span></dd>
             </dl>
             <dl class="stock">
-              <dt>In Stock</dt>
-              <dd><span class="stock"><%= @product.has_stock? ? "YES" : "NO" %></span></dd>
+              <dt>Stok</dt>
+              <dd><span class="stock"><%= @product.has_stock? ? "YA" : "TIDAK" %></span></dd>
             </dl>
  
             <hr />
@@ -73,7 +74,7 @@ Deface::Override.new(:virtual_path => %q{spree/products/show},
               </div>
             <% end%>
 
-          <p><button type="submit">Add to cart</button></p>
+          <p><button type="submit">Tambahkan ke Keranjang</button></p>
         <% end %>
       </div>
     </div>

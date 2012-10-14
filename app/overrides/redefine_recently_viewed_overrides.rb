@@ -11,6 +11,6 @@ if Rails.application.railties.all.map(&:railtie_name).include? "spree_recently_v
   Deface::Override.new(:virtual_path => 'spree/shared/_recently_viewed_products',
                        :name => 'change_title',
                        :replace => 'h3',
-                       :text => '<h2>Recently Viewed</h2>')
+                       :text => '<h2>Terakhir Dilihat</h2>')
 
 end

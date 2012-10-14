@@ -2,23 +2,23 @@ Deface::Override.new(:virtual_path => %q{spree/checkout/registration},
                           :name => %q{replace_checkout_registration},
                           :replace => %q{#registration},
                           :text => %q{<div id="checkout" role="checkout" class="clearfix">
-  <div id="title" role="title">CHECKOUT</div>
+  <div id="title" role="title">Akhiri Belanja</div>
   <!-- START MAIN CONTENT -->
   <div id="main-content" role="main-content">
     <%= render "spree/shared/error_messages", :target => @order %>
     <div id="tabs" role="tabs">
       <ul>
-        <li class='active'><span class="number">1</span><span class="title">Create an Account</span></li>
-        <li><span class="number">2</span><span class="title">Your Address</span></li>
-        <li><span class="number">3</span><span class="title">Shipping Options</span></li>
-        <li><span class="number">4</span><span class="title">Payment Options</span></li>
-        <li><span class="number">5</span><span class="title">Place Order</span></li>
+        <li class='active'><span class="number">1</span><span class="title">Buat Akun</span></li>
+        <li><span class="number">2</span><span class="title">Alamat Anda</span></li>
+        <li><span class="number">3</span><span class="title">Pengiriman</span></li>
+        <li><span class="number">4</span><span class="title">Pembayaran</span></li>
+        <li><span class="number">5</span><span class="title">Alamat Pesanan</span></li>
       </ul>
     </div>
     <div id="content" role="content">
       <div id="existing-customer">
-        <h2>Existing Customers</h2>
-        <p>If you've already registered for an account on you can sign in here:</p>
+        <h2>Pelanggan PasarCairo</h2>
+        <p>Jika anda sudah terdaftar di PasarCairo silahkan login di sini:</p>
         <%= render :partial => 'spree/shared/login' %>
       </div>
 

@@ -2,7 +2,7 @@ Deface::Override.new(:virtual_path => %q{spree/checkout/_delivery},
                           :name => %q{replace_shipping_method},
                           :replace => %q{#shipping_method[data-hook]},
                           :text => %q{<div id="content" role="content">
-  <h2>Choose A Shipping Method</h2>
+  <h2>Pilih Jasa Pengiriman</h2>
   <ul class="fields">
 
     <div id="methods">
@@ -23,5 +23,5 @@ Deface::Override.new(:virtual_path => %q{spree/checkout/_delivery},
     <% end %>
   </ul>
 
-  <div class="submit"><button type="submit" class="blue">Continue</button></div>
+  <div class="submit"><button type="submit" class="blue">Lanjut</button></div>
 </div>})

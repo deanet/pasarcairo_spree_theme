@@ -2,14 +2,14 @@ Deface::Override.new(:virtual_path => %q{spree/checkout/payment/_gateway},
                           :name => %q{replace_gateway_fields},
                           :replace => %q{[data-hook='card_number']},
                           :text => %q{<li class="payment_method <%= payment_method.id %>" style="display:<%= checked == payment_method.id ? "block" : "none" %>;">
-  <h2>Your Credit Card Information</h2>
+  <h2>Informasi Kartu Kredit Anda</h2>
   <% ['mastercard', 'visa', 'american-express', 'discover'].each do |card| %>
     <%= image_tag "store/icons/#{card}-curved-32px.png", :alt => card.capitalize %>
   <% end %>
 </li>
 
 <li class="payment_method <%= payment_method.id %> three-quart" style="display:<%= checked == payment_method.id ? "block" : "none" %>;">
-  <label>Credit card number</label>
+  <label>Nomor Kartu Kredit</label>
   <% options_hash = Rails.env.production? ? {:autocomplete => "off"} : {} %>
   <%= text_field_tag "#{param_prefix}[number]", '', options_hash.merge(:class => 'required', :size => 19, :maxlength => 19) %>
 </li>

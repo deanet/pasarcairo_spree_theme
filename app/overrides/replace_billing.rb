@@ -3,7 +3,7 @@ Deface::Override.new(:virtual_path => %q{spree/checkout/_address},
                           :replace => %q{#billing[data-hook]},
                           :text => %q{
 <div id="content" role="content">
-  <h2>Your Billing Information</h2>
+  <h2>Informasi Billing Anda</h2>
   <fieldset id="billing" data-hook>
   <%= form.fields_for :bill_address do |bill_form| %>
     <legend><%= t(:billing_address) %></legend>
@@ -86,7 +86,7 @@ Deface::Override.new(:virtual_path => %q{spree/checkout/_address},
 </fieldset>
   <hr/>
 
-  <h2>Your Shipping Information</h2>
+  <h2>Informasi Pengiriman/Ongkir anda</h2>
   <fieldset id="shipping" data-hook>
   <%= form.fields_for :ship_address do |ship_form| %>
     <legend><%= t(:shipping_address) %></legend>
@@ -171,5 +171,5 @@ Deface::Override.new(:virtual_path => %q{spree/checkout/_address},
     </div>
   <% end %>
 </fieldset>
-  <div class="submit"><button type="submit" class="blue">Continue</button></div>
+  <div class="submit"><button type="submit" class="blue">Lanjut</button></div>
 </div>})
